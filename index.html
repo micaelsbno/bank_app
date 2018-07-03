@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>GA Bank</title>
+</head>
+<body>
+  <header>
+    <img src="https://s2.coinmarketcap.com/static/img/coins/32x32/84.png" alt="">
+    <h1>ONLINE BANK</h1>
+    <div class="spacer"></div>
+  </header>
+  <main>
+    <div class="savings" id="savings">
+      <div class="savings__line">
+      </div>
+      <h3>SAVINGS</h3>
+      <small>Your balance is...</small>
+      <h2>$ <span>1</span></h2>
+      <input type="number">
+      <div class="buttons">
+        <button class=".savings withdraw-button savings__button">WITHDRAW</button><button class="deposit-button savings__button">DEPOSIT</button>
+      </div>
+    </div>
+    <div class="checking" id="checking">
+      <div class="checking__line">
+      </div>
+      <h3>CHECKING</h3>
+      <small>Your balance is...</small>
+      <h2>$ <span>1 </span></h2>
+      <input type="number">
+      <div class="buttons">
+        <button class=".savings withdraw-button checking__button">WITHDRAW</button><button class="deposit-button checking__button">DEPOSIT</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="bank.js"></script>
+</body>
+</html>

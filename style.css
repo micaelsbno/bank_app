@@ -1,0 +1,168 @@
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: dimgrey;
+  font-family: 'Raleway', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+.spacer {
+  width: 37px;
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+header {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 37px;
+  height: 37px;
+}
+
+h1 {
+  display: inline-block;
+  align-self: center;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  margin: 40px auto;
+  width: 90%;
+}
+
+
+
+.savings {
+  color: darkorange;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  background-color: rgba(252,252,252);
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.savings__line {
+  display: block;
+  margin: -30px -30px 0px -30px;
+  background-color: darkorange;
+  height: 5px;
+  border-radius: 3px 3px 0 0 ;
+}
+
+.checking__line {
+  display: block;
+  margin: -30px -30px 0px -30px;
+  background-color: #008CFF;
+  height: 5px;
+  border-radius: 3px 3px 0 0 ;
+}
+
+h3{
+  font-family: 'Raleway-Bold';
+  text-align: left;
+  font-size: 14px;
+  font-weight: 900;
+  color: darkorange;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  height: 27px;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+button {
+  font-family: 'Raleway-Bold';
+  padding: 10px;
+  border-radius: 20px;
+  margin: 2px;
+}
+
+.savings__button{
+  color: darkorange;
+  background-color: rgba(252,252,252);
+  border: 2px solid darkorange;
+}
+
+.savings__button:hover {
+  color: white;
+  background-color: darkorange;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.red-button {
+  border-color: white;
+  color: white;
+  background-color: darkred;
+}
+
+.red-button:hover {
+  border-color: white;
+  color: darkred;
+  background-color: white;
+}
+
+.checking h3{
+  color: #008CFF;
+}
+
+.checking__button {
+  background-color: rgb(252,252,252);
+  color: #008CFF;
+  border: 2px solid #008CFF;
+}
+
+.checking__button:hover {
+  color: white;
+  background-color: #008CFF;
+  border: 2px solid #008CFF;
+}
+
+.checking {
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgba(252,252,252);
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+@media (min-width: 32em) {
+
+  main {
+  flex-flow: row;
+  width: 500px;
+  }
+
+  .checking {
+  margin-left: 20px;
+  margin-top: 0;
+  }
+}
